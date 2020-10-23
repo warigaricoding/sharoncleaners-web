@@ -1,0 +1,265 @@
+<html>
+
+<head>
+    <title>Sharon Cleaners Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="autologin()">
+    <!---------Nav Bar---------->
+    <!---------Nav Bar---------->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand"><img src="img/logo.png"></a>
+            <h1 id="title"><a id="sharon-cleaners" class="nav-link" href="#">Sharon Cleaners</a></h1>
+            <!--div>
+                <h6 id="nav-bar-p" onclick="submitMessage()"><i class="fas fa-phone-volume"></i>
+                    <i class="fas fa-phone-rotary"></i> &nbsp 770-586-0575
+                    &nbsp&nbsp <i class="fas fa-envelope-square"></i>&nbsp scdcwj@gmail.com
+                </h6>
+                <h6 id="nav-bar-p"> <i class="fas fa-map-marker-alt"></i> &nbsp 1234 Loganville Hwy Braselton GA</h6>
+            </div-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">INFO</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a class="nav-link" href="info.html#about">ABOUT US</a></li>
+                                <li><a class="nav-link" href="info.html#hoo">HOURS</a></li>
+                                <li><a class="nav-link" href="info.html#location">LOCATIONS</a></li>
+                                <li><a class="nav-link" href="info.html#how-it-works">HOW IT WORKS</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">SERVICES</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a class="nav-link" href="services.html#drycleaning">DRYCLEANING</a></li>
+                                <li><a class="nav-link" href="services.html#laundry">LAUNDRY</a></li>
+                                <li><a class="nav-link" href="services.html#wedding-dress">WEDDINGDRESS</a></li>
+                                <li><a class="nav-link" href="services.html#alterations">ALTERATIONS</a></li>
+                                <li><a class="nav-link" href="services.html#leather">LEATHER</a></li>
+                                <li><a class="nav-link" href="services.html#shoe-repiar">SHOES REPAIR</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#deliveryoptions">DELIVERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#testimonials">TESTIMONIALS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact" id="nav-padding">CONTACT US</a>
+                    </li>
+                </ul>
+                <div id="login">
+                    <TABLE style=width:50 align="right" id="table-login">
+                        <tr>
+                            <td class="padit3">Email:</td>
+                            <td class="padit"><INPUT type="text" Size="10" Maxlength="35" id="email" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="padit3">Password:</td>
+                            <td class="padit"><INPUT type="password" Size="10" Maxlength="35" id="password"
+                                    placeholder="">
+                            </td>
+                        </tr>
+                        <tr border-spacing="1px">
+
+                            <td colspan="2" class="padit" align="center"><button type="BUTTON" id="button-login"
+                                    onclick="login();">Login</button>
+                                <button type="BUTTON" onclick="goToRegister();" id="button-register">Register</button>
+                            </td>
+                            </td>
+                    </TABLE>
+                </div>
+            </div>
+        </nav>
+    </section>  
+    <!-----About------>
+    <section>
+        <div id="drycleaning">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Drycleaning</h2>
+                        <div class="about-content">
+    
+                            We have accumulated our know-hows with drycleaning over 15 years of business. We are confident in our abilities to remove stubborn stains, and strive to return our customers' clothes with satisfaction. <br>
+                        </div>
+                        <!--button type="button" class="btn btn-primary">Read more>></button-->
+                    </div>
+                    <div class="col-md-6 skills-bar">
+                        <img src="img/clothes-rainbow-640480.jpg" width="80%" height="300px">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="laundry">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Laundry</h2>
+                        <div class="about-content">
+    
+                            We have our trade secrets with laundry, especially with our treatment with shirt collars. With our agreeable price and quality of the service with shirts, our customers are satistified with laundry products <br>
+    
+    
+    
+                        </div>
+                        <!--button type="button" class="btn btn-primary">Read more>></button-->
+                    </div>
+                    <div class="col-md-6 skills-bar">
+                        <img src="img/clothes-rainbow-640480.jpg" width="80%" height="300px">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="wedding-dress">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Wedding Dress</h2>
+                        <div class="about-content">
+    
+                            We had lots of great feedbacks regarding on how we clean and preserve wedding dresses. We also Employ vacuum storage for wedding dresses. <br>
+    
+    
+    
+                        </div>
+                        <!--button type="button" class="btn btn-primary">Read more>></button-->
+                    </div> 
+                    <div class="col-md-6 skills-bar">
+                        <img src="img/clothes-rainbow-640480.jpg" width="80%" height="300px">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="alteration">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Alteration</h2>
+                        <div class="about-content">
+    
+                            Our seamtress boasts over 20 years of experience with alterations, and we have delivered all kinds of alterations over the years of staying in business<br>
+    
+    
+    
+                        </div>
+                        <!--button type="button" class="btn btn-primary">Read more>></button-->
+                    </div>
+                    <div class="col-md-6 skills-bar">
+                        <img src="img/clothes-rainbow-640480.jpg" width="80%" height="300px">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="leather">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Leather</h2>
+                        <div class="about-content">
+    
+                            We maintain a strong bond with our partner who specializes in leather and carpet, and our products were very satisfactory according to our customers <br>
+    
+    
+    
+                        </div>
+                        <!--button type="button" class="btn btn-primary">Read more>></button-->
+                    </div>
+                    <div class="col-md-6 skills-bar">
+                        <img src="img/clothes-rainbow-640480.jpg" width="80%" height="300px">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="shoe-repair">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Shoe Repair</h2>
+                        <div class="about-content">
+    
+                            As with leather, we have a good friend who specializes in shoes who we have maintained a great relationship with us ever since we have established our business. We have received all kinds of requests with shoe repair, and we assure your satisfaction <br>
+    
+    
+    
+                        </div>
+                        <!--button type="button" class="btn btn-primary">Read more>></button-->
+                    </div>
+                    <div class="col-md-6 skills-bar">
+                        <img src="img/clothes-rainbow-640480.jpg" width="80%" height="300px">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </section>
+
+        <!--------Footer--------->
+        <section id="footer">
+            <div class="container">
+                <p> Copyright &copy; 2020 Jong
+                </p>
+            </div>
+        </section>
+
+
+        <!-----------------Firebase-------------------->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAbb1QHsnlnSV152wd8H7MZ8pgXjk8de8c",
+                authDomain: "sharoncleaners-web.firebaseapp.com",
+                databaseURL: "https://sharoncleaners-web.firebaseio.com",
+                projectId: "sharoncleaners-web",
+                storageBucket: "sharoncleaners-web.appspot.com",
+                messagingSenderId: "262180334172",
+                appId: "1:262180334172:web:a085c0531447be8a8e9499",
+                measurementId: "G-6DXJJB44E9"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="main.js"></script>
+
+</body>
+
+</html>

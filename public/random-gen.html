@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>Sharon Cleaners Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="dom()">
+    <!--------ProgramHeader---------->
+    <!--------Table---------->
+    <div id="random-gen">
+        <TABLE style=width:800 id="table-random-gen">
+            <caption> </caption>
+            <tr>
+                <td class="padit" height=150 colspan="3" style="text-align:center">
+                    <h1 id="title-registration" style="font-size:50">셀모임 배정 페이지 </h1>
+                    <!--p align="center" style="font-size:30">Please fill the form and sign-up. <br> Please be precise with the address, as we will be using them to deliver the laundry to you</p-->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="padit">박찬주네 셀:</td>
+                <td class="padit">김찬주네 셀:</td>
+                <td class="padit">정화종네 셀:</td>
+
+            </tr>
+            <tr>
+                <td class="padit">Last Name:</td>
+                <td class="padit">Last Name:</td>
+                <td class="padit">Last Name:</td>
+
+            </tr>
+            <tr>
+                <td class="padit">Last Name:</td>
+                <td class="padit">Last Name:</td>
+                <td class="padit">Last Name:</td>
+            </tr>
+
+        </table>
+        <TABLE style=width:800 id="table-bethel-mode-list">
+
+        </table>
+            <TABLE style=width:800 align="center" id="table-member-list">
+                <caption> </caption>
+                <tr>
+                    <td class="padit" style="width:20%">리더님들:</td>
+                    <td class="padit" id="list-leader">
+                    </td>
+                    <td class="padit" style="width:20%"><INPUT type="text" Size="5" Minlength="1" Maxlength="35" id="name-leader"
+                        placeholder="이름" required><button onclick="addLeader()">추가</button></td>
+                </tr>
+                <tr>
+                    <td class="padit" style="width:20%">멤버님들:</td>
+                    <td class="padit" id="list-member">
+                    </td>
+                    <td class="padit" style="width:20%"><INPUT type="text" Size="5" Minlength="1" Maxlength="35" id="name-member"
+                        placeholder="이름" required><button onclick="addMember()">추가</button></td>
+
+                </tr>
+
+            </TABLE>
+
+            <p><button id="assign">배정해 주세요!</button></p>
+        <!--------Footer--------->
+        <section id="footer">
+            <div class="container">
+                <p> Copyright &copy; 2020 Jong
+                </p>
+            </div>
+        </section>
+
+
+        <!-----------------Firebase-------------------->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAbb1QHsnlnSV152wd8H7MZ8pgXjk8de8c",
+                authDomain: "sharoncleaners-web.firebaseapp.com",
+                databaseURL: "https://sharoncleaners-web.firebaseio.com",
+                projectId: "sharoncleaners-web",
+                storageBucket: "sharoncleaners-web.appspot.com",
+                messagingSenderId: "262180334172",
+                appId: "1:262180334172:web:a085c0531447be8a8e9499",
+                measurementId: "G-6DXJJB44E9"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="random-gen.js"></script>
+
+</body>
+
+</html>
